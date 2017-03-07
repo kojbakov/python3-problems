@@ -1,14 +1,14 @@
 
-def arithmetic(first_number, second_number, operation):
+def arithmetic(arg1, arg2, op):
     try:
-        if operation == '/':
-            return first_number / second_number
-        elif operation == '+':
-            return first_number + second_number
-        elif operation == '-':
-            return first_number - second_number
-        elif operation == '*':
-            return first_number * second_number
+        if op == '/':
+            return arg1/ arg2
+        elif op == '+':
+            return arg1 + arg2
+        elif op == '-':
+            return arg1 - arg2
+        elif op == '*':
+            return arg1 * arg2
         else:
             return "Неизвестная операция"
     except ZeroDivisionError:
